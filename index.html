@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="index.css"> </head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">PoleraTech</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="clientes.html">Clientes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pedidos.html">Pedidos</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary ms-2" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+              <i class="fas fa-user me-1"></i> Ingresar
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <div class="portfolio-header">
+      <h1 class="display-5 fw-bold">Portfolio</h1>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Trabajamos con influencers</h5>
+            <p class="card-text">Colaboraciones adaptadas a diferentes presupuestos.</p>
+            <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#influencersModal">
+              Ver detalles <i class="fas fa-arrow-right ms-1"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card">
+          <div class="img-placeholder">
+            <img src="featured-poleras.jpg" alt="Poleras Destacadas">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Productos destacados</h5>
+            <p class="card-text">Nuestras poleras más vendidas.</p>
+            <button class="btn btn-sm btn-outline-primary" id="showProductsBtn">
+              Ver productos <i class="fas fa-arrow-right ms-1"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4 mt-3">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="img-placeholder">
+            <img src="campana-poleras-2025.jpg" alt="Campaña Poleras 2025">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Catálogo 2025</h5>
+            <p class="card-text">Explora nuestra nueva colección.</p>
+            <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#catalogoModal">
+              Ver catálogo <i class="fas fa-arrow-right ms-1"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Campaña Verano</h5>
+            <p class="card-text">Promociones especiales para verano.</p>
+            <span class="badge bg-primary">Ahorra 20%</span>
+            <button class="btn btn-sm btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#summerModal">
+              Ver detalles <i class="fas fa-arrow-right ms-1"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-light py-4 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5>PoleraTech</h5>
+            <p class="text-muted">Sistema de venta de poleras</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p>&copy; 2025 PoleraTech. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="db.js"></script>
+    <script src="app.js"></script>
+    <script src="productos.js"></script>
+    <script src="clientes.js"></script>
+    <script src="pedidos.js"></script>
+</body>
+
+</html>
